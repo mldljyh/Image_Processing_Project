@@ -9,3 +9,4 @@ mkl-service
 scikit-learn
 seaborn
 matplotlib
+streamlit
