@@ -2,7 +2,9 @@
 
 ## Team Information
 **Team 20 - Visionary 4**
+
 Course: Image Processing
+
 Institution: Chung-ang University
 
 ## Project Overview
