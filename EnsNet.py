@@ -15,11 +15,7 @@ import matplotlib.pyplot as plt
 
 # Enable multi-core processing for NumPy
 mkl.set_num_threads(4)
-# Alternative if mkl is not available:
-# os.environ["MKL_NUM_THREADS"] = str(os.cpu_count())
-# os.environ["NUMEXPR_NUM_THREADS"] = str(os.cpu_count())
-# os.environ["OMP_NUM_THREADS"] = str(os.cpu_count())
-os.environ["CUDA_VISIBLE_DEVICES"] = "1"
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 class BaseCNN(nn.Module):
     def __init__(self):
