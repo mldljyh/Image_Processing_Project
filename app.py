@@ -1,3 +1,7 @@
+"""
+To run this program, you need to download the model from Google Drive and place it in the checkpoints folder.  
+Google Drive link: https://drive.google.com/file/d/1WghpuaFl15KYH0gcjTEim6GPDh-flhVJ/view?usp=drive_link
+"""
 import streamlit as st
 import os
 import numpy as np
