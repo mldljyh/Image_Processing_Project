@@ -175,6 +175,7 @@ def main():
         prediction, confidence = predict(model, image_tensor, device)
         grid[row][col] = prediction if prediction != "no digit" else "X"
 
+    # Print grid to console
     print("\n7x7 Grid:")
     print("-" * 29)
     for i, row in enumerate(grid):
@@ -185,6 +186,11 @@ def main():
                 print("|")
         if (i + 1) % 7 == 0:
             print("-" * 29)
+    
+    # Write grid to file for integration with other scripts
+    with open('grid_output.txt', 'w') as f:
+        for row in grid:
+            f.write(" ".join(row) + "\n")
 
 if __name__ == "__main__":
     main()
